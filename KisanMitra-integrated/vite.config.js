@@ -20,7 +20,7 @@ export default defineConfig({
     // This prevents CORS errors and keeps your backend URL in one place
     proxy: {
       "/api": {
-        target: "http://localhost:5000",
+        target: "https://kishanai.onrender.com",
         changeOrigin: true,
         // Uncomment to see proxy logs:
         // configure: (proxy) => { proxy.on("proxyReq", (r) => console.log("PROXY →", r.path)); }

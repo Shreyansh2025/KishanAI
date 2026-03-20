@@ -5,7 +5,7 @@
 
 // ── Backend (Express / agri-backend) ─────────────────────────────────────────
 // Your real agri-backend runs here. Change this in ONE place for prod.
-export const BACKEND_URL = "http://localhost:5000";
+export const BACKEND_URL = "https://kishanai.onrender.com";
 
 // ── Claude AI Config (used only for features backend doesn't cover) ──────────
 export const AI_CONFIG = {
