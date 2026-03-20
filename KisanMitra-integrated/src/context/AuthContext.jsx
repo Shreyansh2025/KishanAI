@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useCallback } from "react";
 
-const API = "https://kishanai.onrender.com";
+const API = import.meta.env.VITE_BACKEND_URL || "https://kishanai.onrender.com";
 
 export const AuthCtx = createContext(null);
 export const useAuth = () => useContext(AuthCtx);
