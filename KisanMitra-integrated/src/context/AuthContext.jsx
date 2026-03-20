@@ -4,7 +4,7 @@
 // ══════════════════════════════════════════════════════════════
 import { createContext, useContext, useState, useCallback } from "react";
 
-const API = import.meta.env.VITE_API_URL || "http://localhost:5000";
+const API = "https://kishanai.onrender.com"
 
 export const AuthCtx = createContext(null);
 export const useAuth = () => useContext(AuthCtx);
