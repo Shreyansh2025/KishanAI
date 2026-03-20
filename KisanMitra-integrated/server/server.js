@@ -5,7 +5,7 @@ require("dotenv").config();
 const app              = require("./app");
 const connectDB        = require("./config/db");
 const { seedMarketData } = require("./services/market.service");
-
+const cors = require('cors');
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
