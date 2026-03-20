@@ -8,6 +8,10 @@ const { seedMarketData } = require("./services/market.service");
 
 const PORT = process.env.PORT || 5000;
 
+app.use(cors({
+  origin: "https://kishan-ai.vercel.app/", // Your Vercel link
+  credentials: true
+}));
 const start = async () => {
   // 1. Connect to MongoDB
   await connectDB();
