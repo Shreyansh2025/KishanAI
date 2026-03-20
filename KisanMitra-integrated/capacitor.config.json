@@ -1,6 +1,38 @@
 {
-  "appId": "com.kisanmitra.app",
+  "appId": "com.shreyansh.kishanai",
   "appName": "kisanmitra",
   "webDir": "dist",
-  "bundledWebRuntime": false
+  "bundledWebRuntime": false,
+  "server": {
+  "androidScheme": "https",
+  "cleartext": true,
+  "allowNavigation": [
+    "*.onrender.com",
+    "*.vercel.app"
+  ]
+},
+  "android": {
+    "allowMixedContent": false,
+    "backgroundColor": "#0d1f12",
+    "buildOptions": {
+      "keystorePath": "release.keystore",
+      "keystoreAlias": "kisanmitra"
+    }
+  },
+  "ios": {
+    "backgroundColor": "#0d1f12",
+    "contentInset": "automatic"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 2000,
+      "backgroundColor": "#0d1f12",
+      "androidSplashResourceName": "splash",
+      "showSpinner": false
+    },
+    "StatusBar": {
+      "style": "DARK",
+      "backgroundColor": "#0d1f12"
+    }
+  }
 }
