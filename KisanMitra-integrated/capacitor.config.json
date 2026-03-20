@@ -1,0 +1,6 @@
+{
+  "appId": "com.kisanmitra.app",
+  "appName": "kisanmitra",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
